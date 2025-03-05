@@ -3,27 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/pages/Contact/contact.css">
     <title>Contact</title>
 </head>
 <body>
-    <nav>
-        <a>Men</a> |
-        <a>Women</a> |
-        <a>Search</a> |
-    
-        <a href="/pages/Home/home.html">Home</a> |
-        <a href="/pages/About/about.html">About</a> 
-        <hr>
-    </nav>
-    <h1>Contact Page</h1>
+    <nav id="navbar">
 
-    <form>
+        <div id="links">
+            <a href="/pages/Men/men.html">Men</a> |
+            <a href="/pages/Women/women.html">Women</a> |
+            
+            <a href="/pages/Home/home.html">Home</a> |
+            <a href="/pages/About/about.html">About</a> |
+        </div>
+
+        <input id='search-bar' type="text" placeholder="Search..."/>
+    </nav>
+
+    <h1>CONTACT</h1>
+
+    <form id="contact-form">
         <input type="text" placeholder="Email"/>
         <input type="text" placeholder="Name"/>
         <br>
         <textarea rows="4" cols="35" placeholder="Message"></textarea>
         <br>
-        <input type="submit" value="Submit"/>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>

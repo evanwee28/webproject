@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 body {
-    font-family: 'Outfit', sans-serif;
+    font-family: "Outfit", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f2f2e4;
@@ -32,7 +32,7 @@ body {
 
 #search-bar{
     opacity: 80%;
-    font-family: 'Outfit', sans-serif;
+    font-family: "Outfit", sans-serif;
     padding: 5px 10px;
     border:none;
     background-color: transparent;
@@ -47,32 +47,44 @@ body {
 
 h1 {
     color: rgb(3, 3, 68);
-    font-size: 72px;
-    text-transform: uppercase;
-    letter-spacing: -3px;
     position: absolute;
     bottom: 0;
     left: 0;
-    margin-left: 20px;
     margin-bottom: 20px;
-}
-
-#about-content {
-    margin-top:4rem;
-}
-
-section {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 40px;
-    width: 75rem;
     margin-left: 20px;
+    font-size: 72px;
 }
 
-section h4 {
-    font-size: 18px;
-    color: rgb(3, 3, 68);
-    margin-bottom: 10px;
-    align-self: flex-start;
-    text-decoration: underline;
+#contact-form {
+    padding:10px;
+}
+
+#contact-form input {
+    background-color: transparent;
+    padding: 5px;
+    border:none;
+    border-bottom: 2px solid black;
+    font-family: 'Noto Serif', serif;
+}
+
+#contact-form input:focus {
+    outline: none;
+}
+
+#contact-form textarea {
+    padding: 5px;
+    font-family: 'Outfit', sans-serif;
+    background-color: transparent;
+    font-size:14px
+}
+
+#contact-form textarea:focus {
+    outline: none;
+}
+
+#contact-form button {
+    padding:5px;
+    background-color: transparent;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px; 
 }
