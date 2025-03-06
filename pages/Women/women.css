@@ -1,10 +1,16 @@
+cite {
+    font-size: 12px;
+    opacity: 85%;
+}
+
 #mainsection {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40rem; /* Adjust height as needed */
+    height: 40rem; 
     margin-top: 0;
+    text-align: center;
 }
 
 #mainsection h1 {
@@ -14,6 +20,11 @@
     margin: 0;
     color: #f0dfdf;
     font-weight: 600;
+}
+
+#mainsection span {
+    font-size: 65px;
+    opacity: 95%;
 }
 
 #mainsection img {
@@ -28,7 +39,6 @@
     gap: 20px;
     padding: 20px;
     justify-items: center;
-    color:black;
 }
 
 #gallery img {
