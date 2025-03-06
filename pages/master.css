@@ -4,7 +4,7 @@ body {
     font-family: "Outfit", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2e4;
+    background-color: #f6f6f0;
     color: #333;
 }
 
@@ -55,31 +55,62 @@ h2 {
     outline: none;
 }
 
-.page-footer {
-    height:300px;
-    /* background-color:rgb(83 25 15); */
-    background-color: #656565;
-    margin-top:15px;
-    color:#f2f2e4;
+.footer {
+    background-color:rgb(83 25 15);
+    /* background-color: #fff; */
+    padding: 40px 20px;
+    color:#f2f2e4
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-}
-
-.footer-links {
-    padding:10px;
-    margin:20px;
-    margin-top:40px;
-}
-
-.footer-links a {
-    color:#f2f2e4;
+  }
+  
+  .footer-column {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column li {
+    margin-bottom: 15px;
+  }
+  
+  .footer-column li a {
     text-decoration: none;
-    padding:5px;
-    margin-top:10px;
-}
-
-.page-footer img {
-    float:right;
-    width:200px;
-}
+    color: #f2f2e4;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .footer-column li a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    border-radius: 50%;
+  } 
