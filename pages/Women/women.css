@@ -96,4 +96,13 @@ cite {
         width: 100%;
         max-width: 200px;
     }
+    
+    #mainsection h1 {
+        font-size:70px;
+    }
+    
+    #mainsection span {
+        font-size: 50px;
+        opacity: 95%;
+    }
 }

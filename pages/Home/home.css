@@ -73,6 +73,7 @@
         width: 100%;
         max-width: 250px;
     }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -86,4 +87,9 @@
         width: 100%;
         max-width: 200px;
     }
+
+    #mainsection h1 {
+        font-size:70px;
+    }
 }
+

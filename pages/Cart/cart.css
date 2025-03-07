@@ -21,7 +21,6 @@ body {
 
 .cart-items {
     flex: 2;
-    /* background: rgb(232, 233, 221); */
     background-color: #f9f9f9;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     padding: 20px;
@@ -160,7 +159,7 @@ body {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: .3s;
 }
 
 .checkout-btn:hover {
@@ -174,6 +173,7 @@ body {
     color: #555;
     text-decoration: none;
     font-size: 14px;
+    cursor: pointer;
 }
 
 .continue-shopping:hover {
@@ -181,30 +181,22 @@ body {
     text-decoration: underline;
 }
 
-.empty-cart {
-    text-align: center;
-    padding: 50px 0;
-}
+@media screen and (max-width: 768px) {
 
-.empty-cart h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
-    color: #555;
-}
-
-.empty-cart p {
-    color: #777;
-    margin-bottom: 25px;
-}
-
-.empty-cart-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background-color: #841c1c;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
-    text-decoration: none;
+    .container {
+        padding: 10px;
+    }
+    
+    .cart-container {
+        flex-direction: column;
+    }
+    
+    .cart-items, .cart-summary {
+        width: 90%;
+    }
+    
+    .page-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
 }
