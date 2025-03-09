@@ -7,6 +7,11 @@
   flex-wrap: wrap;
 }
 
+h1 {
+  font-size:70px;
+  margin-left: 20px;
+}
+
 #about-desc {
   flex: 1;
   min-width: 300px; 

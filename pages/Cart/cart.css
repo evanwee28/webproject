@@ -162,6 +162,11 @@ body {
     transition: .3s;
 }
 
+.checkout-btn a {
+    color:white;
+    text-decoration: none;
+}
+
 .checkout-btn:hover {
     background-color: #6e1717;
 }
