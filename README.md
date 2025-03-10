@@ -6,3 +6,5 @@
 - Evan Wee
 
 ---
+
+##IMAGES ARE PLACEHOLDERS
