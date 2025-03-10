@@ -1,0 +1,103 @@
+h1 {
+    font-size: 70px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.credits {
+    background-color: rgb(247, 248, 240);
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.info-item {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.info-item i {
+    font-size: 1.2rem;
+    color: #8B3A3A;
+}
+
+.contact-form {
+    background-color: rgb(247, 248, 240);
+    padding: 2rem;
+    padding-right:3rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border:none;
+    border-bottom: 2px solid black;
+    font-size: 1rem;
+    font-family: 'Outfit', sans-serif;
+    background-color: rgb(247, 248, 240);
+    margin-bottom: 10px;
+
+}
+
+.form-group textarea {
+    height: 150px;
+    border:2px solid black;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline:none;
+}
+
+button {
+    background-color: #8B3A3A;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #6d2e2e;
+}
+
+.continue-link {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .credit-section {
+        display: block;
+    }
+}
