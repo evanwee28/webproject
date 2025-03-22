@@ -51,6 +51,17 @@ h2 {
     font-size: 12px;
     border-bottom: 2px solid black;
     width: 200px;
+    float: right;
+}
+
+.logInButton {
+  background-color: rgb(59, 59, 152);
+  border:none;
+  font-size:14px;
+  margin-left:15px;
+  cursor: pointer;
+  padding:8px;
+  color:#f6f6f0;
 }
 
 .search-bar:focus {
@@ -120,6 +131,15 @@ h2 {
     background-color: #eee;
     border-radius: 50%;
   } 
+
+.gallery-item {
+  transition: .3s;
+  margin-top:15px;
+}
+
+.gallery-item:hover {
+  transform: scale(1.15);
+}
 
 @media screen and (max-width: 480px) {
   

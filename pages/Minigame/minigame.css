@@ -1,0 +1,34 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.game-container { 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 20px; 
+}
+
+.bin { 
+    width: 100px; 
+    height: 150px; 
+    border: 2px dashed #333; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.item { 
+    width: 50px; 
+    height: 50px; 
+    cursor: grab; 
+}
+
+#message {
+    font-size:18px;
+}
+
+#continue-shopping {
+    display: none;
+}

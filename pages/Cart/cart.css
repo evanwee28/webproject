@@ -3,10 +3,11 @@ body {
     color: #333;
 }
 
-.container {
+.container-cart {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    /* display: none; */
 }
 .page-title {
     font-size: 28px;

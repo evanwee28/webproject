@@ -8,12 +8,20 @@
     <title>Home</title>
 </head>
 <body>
+
+
+    <script src="/pages/Home/home.js"></script>
+
+    <div id="discountPopup">
+        <a href="/pages/Minigame/minigame.html">Click here for 10% off your next order!</a>
+        <button id="removeButton">X</button>
+    </div>
     <nav class="navbar">
 
         <div class="nav-links">
             <a href="/pages/Men/men.html">Men</a> |
             <a href="/pages/Women/women.html">Women</a> |
-            <a href="/pages/Cart/cart.html">cart</a>
+            <a href="/pages/Cart/cart.html">cart</a> 
         </div>
 
         <img src="/images/logo.png" alt="logo" width="50px"/>
@@ -24,12 +32,15 @@
     <section id="mainsection">
         <h1>ECHELON</h1>
 
-        <img src="/images/PlaceholderImage.png" alt="clothes"/>
+        <img src="/images/PlaceholderImage.png" alt="clothes" id="placeholderImage"/>
+
     </section>
     <br/>        
     <h2>Featured Items</h2>
     <section id="gallery">
         <div class="gallery-item">
+            <button class="addToCartButton">+</button>
+            <br/>
             <a>
                 <cite><img src="/images/red-shirt.png" width="200px" alt="clothes"/><br>Image Courtesy of FlatIcon</cite>
                 <br/>
@@ -38,6 +49,8 @@
             </a>
         </div>
         <div class="gallery-item">
+            <button class="addToCartButton">+</button>
+            <br/>
             <a>
                 <cite><img src="/images/clothes.png" width="200px" alt="clothes"/><br>Image Courtesy of FlatIcon</cite>
                 <br/>
@@ -47,6 +60,8 @@
         </div>
 
         <div class="gallery-item">
+            <button class="addToCartButton">+</button>
+            <br/>
             <a>
                 <cite><img src="/images/red-shirt.png" width="200px" alt="clothes"/><br>Image Courtesy of FlatIcon</cite>
                 <br/>
@@ -56,6 +71,8 @@
         </div>
 
         <div class="gallery-item">
+            <button class="addToCartButton">+</button>
+            <br/>
             <a>
                 <cite><img src="/images/clothes.png" width="200px" alt="clothes"/><br>Image Courtesy of FlatIcon</cite>
                 <br/>

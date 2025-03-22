@@ -66,6 +66,19 @@ cite {
     font-weight: bold;
 }
 
+.gallery-item button {
+    background-color: transparent;
+    border:2px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery-item button:hover {
+    background-color:rgb(83 25 15);
+    border:2px solid rgb(83 25 15);
+    color: white;
+}
+
 @media screen and (max-width: 1024px) {
     #gallery {
         grid-template-columns: repeat(3, 1fr);

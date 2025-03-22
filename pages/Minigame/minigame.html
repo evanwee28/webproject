@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get A Discount Code!</title>
+    <link rel="stylesheet" href="/pages/Minigame/minigame.css"/>
+    <link rel="stylesheet" href="/pages/master.css"/>
+    
+</head>
+<body>
+    <nav class="navbar">
+
+        <div class="nav-links">
+            <a href="/pages/Men/men.html">Men</a> |
+            <a href="/pages/Women/women.html">Women</a> |
+            <a href="/pages/Cart/cart.html">cart</a> 
+        </div>
+
+        <img src="/images/logo.png" alt="logo" width="50px"/>
+
+        <input class='search-bar' type="text" placeholder="Search..."/>
+    </nav>
+    <br/>
+    <h1>Recycling Sort Game</h1>
+    <p>Drag the items to the correct bin to earn a discount!</p>
+    <div class="game-container">
+        <div class="bin" data-type="plastic">Garbage Bin</div>
+        <div class="bin" data-type="paper">Recycling Bin</div>
+        <div class="bin" data-type="organic">Organic Bin</div>
+    </div>
+    <div class="game-container" id="gameoptions">
+        <img src="/images/bottle.png" class="item" draggable="true" data-type="plastic">
+        <img src="/images/cardboard.png" class="item" draggable="true" data-type="paper">
+        <img src="/images/banana.png" class="item" draggable="true" data-type="organic">
+    </div>
+    <p id="message"></p>
+    <p id="error-message"></p>
+    <a href="/pages/Home/home.html" id="continue-shopping">Continue shopping</a>
+    <script>
+        const items = document.querySelectorAll('.item');
+        const bins = document.querySelectorAll('.bin');
+        let score = 0;
+
+        items.forEach(item => {
+            item.addEventListener('dragstart', event => {
+                event.dataTransfer.setData('type', item.dataset.type);
+            });
+        });
+
+        bins.forEach(bin => {
+            bin.addEventListener('dragover', event => {
+                event.preventDefault();
+            });
+
+            bin.addEventListener('drop', event => {
+                event.preventDefault();
+                const type = event.dataTransfer.getData('type');
+                if (type === bin.dataset.type) {
+                    score++;
+                    document.getElementById('message').textContent = `Correct! Score: ${score}`;
+                    if (score === 3) {
+                        document.getElementById('message').textContent = 'You earned a discount code: GREEN10';
+                        document.getElementById('gameoptions').style.display = "none";
+                        document.getElementById("continue-shopping").style.display = "block";
+
+                    }
+                } else {
+                    document.getElementById('message').textContent = 'Wrong bin! Try again.';
+                }
+            });
+        });
+    </script>
+
+<br/>
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>Company Info</h3>
+        <ul>
+          <li><a href="/pages/About/about.html">About Us</a></li>
+          <li><a href="/pages/Contact/contact.html">Contact Us</a></li>
+          <li><a href="/pages/Planet/planet.html">Planet</a></li>
+          <li><a href="/pages/Credits/credits.html">Credits</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a><img src="/images/facebook.png" alt="Facebook"></a>
+          <a><img src="/images/instagram.png" alt="Instagram"></a>
+          <a><img src="/images/x.png" alt="X"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

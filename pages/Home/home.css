@@ -41,6 +41,14 @@
     border-bottom: 1px solid black;
 }
 
+.gallery-item {
+    transition: .3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.3);
+}
+
 .gallery-item p {
     padding-left: 5px;
     padding-right: 5px;
@@ -55,6 +63,56 @@
     color: green;
     font-weight: bold;
 }
+
+.gallery-item button {
+    background-color: transparent;
+    border:2px solid black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery-item button:hover {
+    background-color:rgb(83 25 15);
+    border:2px solid rgb(83 25 15);
+    color: white;
+}
+
+#discountPopup {
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    padding: 20px;
+    text-align: center;
+    transform: translate(calc(50vw - 50%), calc(50vh - 50%));
+    
+}
+
+#discountPopup a{
+    color:rgb(83 25 15);
+    font-size:18px;
+}
+
+#discountPopup button {
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: transparent;
+    border:0px;
+    cursor: pointer;
+    padding:5px;
+}
+
 
 @media screen and (max-width: 1024px) {
     #gallery {
@@ -92,4 +150,3 @@
         font-size:70px;
     }
 }
-
